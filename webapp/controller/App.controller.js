@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (Controller, MessageToast, JSONModel, ResourceModel) {
     "use strict"
     return Controller.extend("sap.ui.demo.walkthrough.App", {
-        onInit: function () {
+/*         onInit: function () {
             // set the data model on the view
             var oData = {
                 recipient: {
@@ -23,7 +23,7 @@ sap.ui.define([
                 fallbackLocale: ""
             });
             this.getView().setModel(i18nModel, "i18n");
-        },
+        }, */
 
         onShowHello: function () {
             // read msg from i18n Model
