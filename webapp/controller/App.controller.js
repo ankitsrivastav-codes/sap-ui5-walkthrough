@@ -5,5 +5,9 @@ sap.ui.define([
     "sap/ui/model/resource/ResourceModel"
 ], function (Controller, MessageToast, JSONModel, ResourceModel) {
     "use strict"
-    return Controller.extend("sap.ui.demo.walkthrough.App", {});
+    return Controller.extend("sap.ui.demo.walkthrough.App", {
+        onOpenDialog: function () {
+            this.getOwnerComponent().openHelloDialog();
+        }
+    });
 });
